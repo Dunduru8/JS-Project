@@ -424,7 +424,7 @@ body {
   height: 438px;
 }
 .subscibe {
-  background: url("img/Subscribe.jpg") no-repeat;
+  background: url("https://student-geekbrains.000webhostapp.com/img/Subscribe.jpg") no-repeat;
   width: 1610px;
   height: 438px;
 }
@@ -794,6 +794,11 @@ body {
 .featured_items_box {
   width: 261px;
   position: relative;
+  list-style-type: none;
+}
+.carousel_ul_singl{
+  display: flex;
+  justify-content: space-between;
 }
 .featured_items_box_img:hover .add_tocard {
   display: flex;
@@ -879,6 +884,12 @@ details {
   width: 263px;
   height: 74px;
   margin-bottom: 58px;
+}
+table {
+	font-size: 1em;
+}
+.ui-draggable, .ui-droppable {
+	background-position: top;
 }
 .trending_now_list li {
   list-style-type: none;
@@ -1280,8 +1291,7 @@ details {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-  line-height: 50px;
+  line-height: 80px;
   padding-left: 72px;
 }
 .singl_item_img {
@@ -1714,12 +1724,55 @@ details {
   flex-direction: row;
   justify-content: space-between;
 }
+.checkout_buttonJQ{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 70px;
+  height: 30px;
+}
+.checkout_buttonHide{
+  margin-bottom: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+#send_button{
+  display: block;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 50px;
+}
+#send_button a{
+  display: block;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 50px;
+}
+#send_button a:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  transition: all 0.5s ease-in-out;
+}
+
 .shiping_adress_cap {
   color: #222222;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   display: flex;
+  margin-top: 20px;
 }
 .shiping_adress_cap p {
   color: #222222;
@@ -1738,8 +1791,11 @@ details {
 .checkout_form_1 {
   display: flex;
   justify-content: space-between;
-  margin-top: 90px;
-  margin-bottom: 79px;
+  margin-top: 30px;
+  margin-bottom: 59px;
+}
+.checkout_forms{
+  margin-bottom: 100px;
 }
 .checkout_form_1_right {
   width: 500px;
@@ -1802,9 +1858,10 @@ details {
   line-height: 20px;
   text-transform: uppercase;
   display: flex;
+  margin-bottom: 10px;
 }
 .adress_label p {
-  color: #f16d7f;
+  color: #ebd9dc;
   font-size: 17px;
   margin-left: 5px;
 }
@@ -1846,8 +1903,79 @@ details {
 .button_Fpassword a:hover {
   border-bottom: 1px solid #f16d7f;
 }
+#name{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#sername{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#phone{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#email_adress_1 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#city{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+  position: absolute;
+}
+.city_none{
+  display: none;
+}
+#city_list{
+  position: relative;
+  padding-left: 10px;
+  margin-top: 55px;
+  height: 150px;
+  overflow: scroll;
+  border: 1px solid #f7cbcb;
+}
+.display_none{
+  display: none;
+}
+#city_list li{
+  list-style-type: none;
+}
 .checkout_drop {
   display: none;
+}
+.checkout_form_1_left{
+  margin-top: 67px;
 }
 .checkout_form_3 {
   margin-top: 33px;

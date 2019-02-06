@@ -1,15 +1,17 @@
 var $cart = $("#empty_Cart");
 var $catalog = $("#goods");
+var $relativ = $("#carousel_ul_singl");
 var $navigation = $("#navigation");
 
-function buildCatalog() {
-  var shopParams = getShopParams();
+function buildCatalog($href) {
+  //var shopParams = getShopParams();
+  var url = $href;
+  //var url = "http://localhost:3000/goods"   
+  //?category=men&_limit=9";
 
-  var url = "http://localhost:3000/goods?category=men&_limit=9";
-
-  if(shopParams.category) {
-    url += "?category=" + shopParams.category;
-    }
+  //if(shopParams.category) {
+  // url += "?category=" + shopParams.category;
+   //}
 
  $.ajax({
     url: url,
@@ -100,12 +102,12 @@ function buildCart() {
 
 
 (function($) {
-  buildCatalog();
+  buildCatalog($href);
   buildCart();
   
   $navigation.on("click", ".menu_link", function(event){
-    
-    buildCatalog();
+    var $href = this.href; //убрать после разбора работы ссылок и utils.js
+    buildCatalog($href)
     event.preventDefault();
 
   });
@@ -160,6 +162,51 @@ function buildCart() {
         }
       });
     }
-});
+  });
+  
+  //TODO переделать блок #carousel_ul_singl ($relativ) на динамически создаваемый
+
+  /*$relativ.on("click", ".add_tocard ", function() {
+     var good = $(this).data();
+          if($("#cart-" + good.id).length) {
+          // товар в корзине есть - нужно увеличить количество
+          var goodInCart = $("#cart-" + good.id).data();
+             $.ajax({
+               url: "http://localhost:3000/cart/" + good.id,
+               type: "PATCH",
+               dataType: "json",
+               data: { quantity: +goodInCart.quantity + 1 },
+               success: function() {
+               buildCart();
+              }
+              });
+           } else {
+           // товара в корзине нет - нужно добавить
+          good.quantity = 1;
+          $.ajax({
+          url: "http://localhost:3000/cart",
+          type: "POST",
+          dataType: "json",
+          data: good,
+          success: function() {
+          buildCart();
+          }
+          });
+          }
+   });*/
 })(jQuery);
+
+$( function() {
+  $( "#slider-range" ).slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [ 15, 300 ],
+    slide: function( event, ui ) {
+      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+    }
+  });
+  $("#amount").val("$" + $("#slider-range").slider("values", 0 ) +
+    " - $" + $("#slider-range").slider("values", 1 ) );
+});
 

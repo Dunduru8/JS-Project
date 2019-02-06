@@ -2,18 +2,27 @@
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src = "utils.js"></script>
+    <script>
+      (function($){
+        var shopParam  = getShopParams();
+      })(jQuery);
+    </script>
   </head> 
-     <body>
-       <header class="header">
+   
+    <body>
+      <div class="content">
+         <div class="top">
+         <header class="header">
            <div class="container header-flex"> 
            <div class= "header-left">
-              <a class = "logo" href="index.html"><img class= "logo-img" src="https://student-geekbrains.000webhostapp.com/img/Logo.png" alt="logo">BRAN<span class= "logo_d">D</span></a>
-            <form class = "header_form" action="#">
+              <a class = "logo" href="index.html"><img class= "logoe-img" src="https://student-geekbrains.000webhostapp.com/img/Logo.png" alt="logo">BRAN<span class= "logo_d">D</span></a>
+            <form class = "header_form" action="">
                <div class= "browse">Browse<img class="arrow_brws" src="https://student-geekbrains.000webhostapp.com/img/hover_brws.png" alt="arrow">
                <div class= "drop_dow">
                    <div class= "drop_flex">
@@ -45,29 +54,66 @@
                </div>
                </div>
                <input type="text" placeholder="Search for Item..." id= "search">
-               <button type ="submit" id= "submit"><img class="search-img" src="https://student-geekbrains.000webhostapp.com/img/search.png" alt="search"></button>
+               <button type ="submit" id= "submit"><img src="https://student-geekbrains.000webhostapp.com/img/search.png" alt="search"></button>
             </form>
           </div>
           <div class= "header-right">
                 <div class= "drop_cart">
-                 <a href="#"><img class="anim-cart" src="https://student-geekbrains.000webhostapp.com/img/cart.svg" alt="cart" id="cart"></a>
+                 <a href="cart.html"><img class="anim-cart" src="https://student-geekbrains.000webhostapp.com/img/cart.svg" alt="cart" id="cart"></a>
                   
-                  
+                  <div class="drop_down_cart">
+                      <div class= "item_in_cart">
+                          <a href="Singl.html"><img src="img/Item_in_cart_1.jpg" alt="item_in_cart"></a>
+                          <div class= "about_item">
+                              <h3 class="name_item">Rebox Zane</h3>
+                              <div class= "stars"><a href="#"><img src="img/stars.jpg" alt="stars"></a></div>
+                              <div class="item_price_cart">
+                                  <img src="img/1__x___$250.png" alt="price">
+                              </div>
+                          </div>
+                             <div class="delit_items">
+                                  <a href="#"><img src="img/del.png" alt="del"></a>
+                             </div>
+                      </div>
+                      <div class= "item_in_cart">
+                          <a href="Singl.html"><img src="img/Item_in_cart_2.jpg" alt="item_in_cart"></a>
+                          <div class= "about_item">
+                              <h3 class="name_item">Rebox Zane</h3>
+                              <div class= "stars"><a href="#"><img src="img/stars.jpg" alt="stars"></a></div>
+                              <div class="item_price_cart">
+                                  <img src="img/1__x___$250.png" alt="price">
+                              </div>
+                          </div>
+                             <div class="delit_items">
+                                  <a href="#"><img src="img/del.png" alt="del"></a>
+                             </div>
+                      </div>
+                      <div class= "total">
+                          <h3 class= "total_text">total</h3>
+                          <div class="tatal_price">$500</div>
+                      </div>
+                      <div class= "checkout">
+                          <a href="Checkout.html">checkout</a>
+                      </div>
+                      <div class= "go_cart">
+                          <a href="cart.html">Go to cart</a>
+                      </div>
+                  </div>
               </div> 
             <a href="#" class= "button">My Account<img class="whtite" src="https://student-geekbrains.000webhostapp.com/img/hover_white.png" alt="arrow"></a> 
           </div>
            </div>
     </header>
-        <nav class="navigation">
+         <nav class="navigation">
             <div class= "container">
                <div class= "border-bottom_red">
                 <ul class= "menu_header_top">
                <li class= "menu_list">
                  <a class= "menu_link" href="index.html">Home</a>
-                
+                 
                </li>
                  <li class= "menu_list">
-                  <a class= "menu_link" href="Index.html">Man</a>
+                  <a class= "menu_link" href="Products.html">Man</a>
                   <div class= "drop_box">
                    <div class= "drop_flex">
                       <h3 class= "drop_heading">Women</h3>
@@ -317,9 +363,9 @@
                       </ul> 
                        <div class= "promotion">
                         <div class= "super_sale">
-                          <img src="img/Sale.png" alt="sale">
+                          <img src="https://student-geekbrains.000webhostapp.com/img/Sale.png" alt="sale">
                         </div>
-                        <div class= "https://student-geekbrains.000webhostapp.com/super_sale_text">
+                        <div class= "super_sale_text">
                            <a href="#"><p>super <br> sale!</p></a>
                         </div> 
                       </div>
@@ -383,7 +429,7 @@
             </div>
             
         </nav>
-        <nav class= "produckt_nav">
+         <nav class= "produckt_nav">
            <div class= "container breadCrumbs_nav">
              <h3 class="product_nav_text">New Arrivals</h3>
                 <nav class= "breadCrumbs">
@@ -393,110 +439,235 @@
                </nav>
            </div>
        </nav>
-        <nav class="container cart_nav">
-          <h3 class= "cart_nav_text">Product Details</h3> 
-          <ul class="cart_nav_text_right">
-               	<li>unite Price</li>
-               	<li>Quantity</li>
-               	<li>shipping</li>
-               	<li>Price</li>
-               	<li>ACTION</li>										   
-            </ul>
-        </nav>  
-        <div class= "container border_line"></div>
-
-       <div class = "container" id = "empty_Cart">
-           <div class= "item_cart">
-               <div class= "item_cart_right">
-                  <a href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/Item_cart_1.jpg" alt="item"></a>
-                  <ul class="item_cart_text">
-                      <li><a href="Singl.html">Mango People T-shirt</a></li>
-                      <li><img src="https://student-geekbrains.000webhostapp.com/img/stars.jpg" alt="stars"></li>
-                      <li>Color: red</li>
-                      <li>Size: XL</li>
-                  </ul>
-               
-               </div>
-               <div class= "item_cart_left">
-                   <ul class="cart_nav_text_left">
-                       <li>$150</li>
-               	       <li>1</li>
-               	       <li>free</li>
-               	       <li>$300</li>
-               	       <li><a href="#"><img src="https://student-geekbrains.000webhostapp.com/img/del.png" alt="del"></a></li>		
-                  
-                   </ul>
-               </div>
+        <div class= "container product_list">
+          <nav class= "product_filter">
+           <details>
+              <summary>CATEGORY</summary>
+              <ul>
+                <li class= "Category_sumary_list"><a href="#">Accessories</a></li>
+                <li class= "Category_sumary_list"><a href="#">Bags</a></li>
+                <li class= "Category_sumary_list"><a href="#">Denim</a></li>
+                <li class= "Category_sumary_list"><a href="#">Hoodies &amp;&nbsp;Sweatshirts</a></li>
+                <li class= "Category_sumary_list"><a href="#">Jackets &amp;&nbsp;Coats</a></li>
+                <li class= "Category_sumary_list"><a href="#">Pants</a></li>
+                <li class= "Category_sumary_list"><a href="#">Polos</a></li>
+                <li class= "Category_sumary_list"><a href="#">Shirts</a></li>
+              </ul>
+          </details>
+           <details>
+              <summary>BRAND </summary>
+              <ul>
+                <li class= "Category_sumary_list"><a href="#">Accessories</a></li>
+                <li class= "Category_sumary_list"><a href="#">Bags</a></li>
+                <li class= "Category_sumary_list"><a href="#">Denim</a></li>
+                <li class= "Category_sumary_list"><a href="#">Hoodies &amp;&nbsp;Sweatshirts</a></li>
+                <li class= "Category_sumary_list"><a href="#">Jackets &amp;&nbsp;Coats</a></li>
+                <li class= "Category_sumary_list"><a href="#">Pants</a></li>
+                <li class= "Category_sumary_list"><a href="#">Polos</a></li>
+                <li class= "Category_sumary_list"><a href="#">Shirts</a></li>
+              </ul>
+           </details>
+           <details>
+              <summary>DESIGNER</summary>
+              <ul>
+                <li class= "Category_sumary_list"><a href="#">Accessories</a></li>
+                <li class= "Category_sumary_list"><a href="#">Bags</a></li>
+                <li class= "Category_sumary_list"><a href="#">Denim</a></li>
+                <li class= "Category_sumary_list"><a href="#">Hoodies &amp;&nbsp;Sweatshirts</a></li>
+                <li class= "Category_sumary_list"><a href="#">Jackets &amp;&nbsp;Coats</a></li>
+                <li class= "Category_sumary_list"><a href="#">Pants</a></li>
+                <li class= "Category_sumary_list"><a href="#">Polos</a></li>
+                <li class= "Category_sumary_list"><a href="#">Shirts</a></li>
+              </ul>
+          </details>
+          </nav>
+          <div class= "top_filter">
+           <div class = "ternding">
+              <h3 class= "trending_now_h3">TRENDING NOW</h3>
+               <ul class= "trending_now_list">
+                   <li><a href="#">Bohemian</a></li>
+                   <li><a href="#">Floral</a></li>
+                   <li><a href="#">Lace</a></li>
+                   <li><a href="#">Floral</a></li>
+                   <li><a href="#">Lace</a></li>
+                   <li><a href="#">Bohemian</a></li>
+               </ul>
            </div> 
-           <div class= "border_line"></div>
-
-      </div>
-        
-
-        
-
-        <div class="container action_buttons">
-            <div class="action_button"><a href="#">cLEAR SHOPPING CART</a></div>
-            <div class="action_button"><a href="#">cONTINUE sHOPPING</a></div>
-        </div>    
-        <div class="container order_place">
-           <div class="shiping_address_details">
-              <h3 class="shiping_cap">Shipping Adress</h3>
-              <form action="#">
-              <input type="text" placeholder="Bangladesh" id="shipping_adress">
-              <input type="text" placeholder="State" id="State">
-              <input type="text" placeholder="Postcode / Zip" id="Postcode">
-              </form>
-              <div class="quote_button"><a href="#">get a quote</a></div>
-           </div>
-           <div class="coupon">
-             <h3 class="shiping_cap">coupon discount</h3>
-              <form action="#">
-              <input type="text" id="coupon">
-              </form>
-              <div class="quote_button"><a href="#">Apply coupon</a></div>  
-           </div>
-           <div class="cart_checkout">
-              <div class= "subTotal">
-               <h3>Sub total</h3>
-               <p id = "total_price">$900</p>
-              </div>
-              <div class="garndTotal">
-                  <h3>GRAND TOTAL</h3>
-                  <p>$900</p>
-              </div>
-              <div class="grandTotal_border"></div>
-              <div class="checkOut_button"><a href="Checkout.html">proceed to checkout</a></div>  
-           </div>
-            
-        </div>     
-        <div class= "subscibe_bckg">
-          <div class= "container subscibe">
-           <div class= "subcr_details">
-             <div class= "suscribe_left">
-               <div class= "subscr_text_left"><img src="https://student-geekbrains.000webhostapp.com/img/Subsc_right_img.png" alt="subscr_img" id="subcr_left_img">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
-                  a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
-               <div class= "red_sbcr">Bin Burhan</div>
-               <div class= "subscr_text_left_down">Dhaka, Bd</div>
-              </div>
-            <div class= "subscribe_right">
-              <div class="subscr_right_text_apper">Subscribe</div>
-              <div class= "suscr_right_text_low">
-                     FOR OUR NEWLETTER AND PROMOTION
+            <div class= "size">
+             <h3 class= "trending_now_h3">size</h3> 
+              <ul class= "size_chekbox">
+                  <li><input type="checkbox" checked ><label>XXS</label></li>
+                  <li><input type="checkbox"><label>XS</label></li>
+                  <li><input type="checkbox"><label>S</label></li>
+                  <li><input type="checkbox"><label>M</label></li>
+                  <li><input type="checkbox"><label>L</label></li>
+                  <li><input type="checkbox"><label>XL</label></li>
+                  <li><input type="checkbox"><label>XXL</label></li>
+              </ul>
+            </div>  
+            <div class= "price">
+                <h3 class= "price_h3">price</h3>
+                <input id= "range" type="range" step="1" value="10"> 
+                 <p>$
+                  <output for="range" name= "result"> </output>
+                 </p>
+            </div>
+           <div class= "sort_by">
+             <div class="sort_by_name">
+               <div class="sort_by_button">Sort By</div>
+                <div class="by_name">
+                   <input list="sort_by" id="sort"/>
+                      <datalist id="sort_by">
+                        <option value="Name">
+                        <option value="Brand">
+                        <option value="Designer">
+                      </datalist>
+                 </div>
+             </div>
+              <div class="show_page">
+               <div class="sort_by_button">Show</div>
+                <div class="by_name">
+                   <input list="show" id="show_page"/>
+                      <datalist id="show">
+                        <option value="06">
+                        <option value="09">
+                        <option value="12">
+                      </datalist>
+                 </div>
                </div>
-               <form class = "subscr_form" action="#">
-                 <input type="email" placeholder=" Enter Your Email" id= "subscr">
+           </div>
+           <section class= "produkts_items_img" id = "goods">
+        <div class= "featured_items_box">
+            <a class= "items_list" href="Singl.html"><img src="img/poduct_1.png" alt="featured_items"></a>
+            <h2 class="items_list_text">MANGO PEOPLE T-SHIRT</h2><p class="items_list_price">$52.00</p>
+            <div class= "add_tocard">
+                <a href="#">Add to card</a>
+            </div>
+        </div>
+        <div class= "featured_items_box">
+            <a class= "items_list" href="Singl.html"><img src="img/Products_2.jpg" alt="featured_items"></a>
+            <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+            <div class= "add_tocard">
+              <a href="#">Add to card</a>
+            </div>
+        </div>
+        <div class= "featured_items_box">
+         <a class= "items_list" href="Singl.html"><img src="img/Product_3.jpg" alt="featured_items"></a>
+         <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+          <div class= "add_tocard">
+              <a href="#">Add to card</a>
+          </div>
+        </div>
+        <div class= "featured_items_box">
+         <a class= "items_list" href="Singl.html"><img src="img/Product_4.jpg" alt="featured_items"></a>
+         <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+          <div class= "add_tocard">
+              <a href="#">Add to card</a>
+          </div>
+        </div>
+        <div class= "featured_items_box">
+         <a class= "items_list" href="Singl.html"><img src="img/Product_5.jpg" alt="featured_items"></a>
+         <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+          <div class= "add_tocard">
+              <a href="#">Add to card</a>
+          </div>
+        </div>
+        <div class= "featured_items_box">
+         <a class= "items_list" href="Singl.html"><img src="img/Product_6.jpg" alt="featured_items"></a>
+         <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+          <div class= "add_tocard">
+              <a href="#">Add to card</a>
+          </div>
+        </div>
+        <div class= "featured_items_box">
+         <a class= "items_list" href="Singl.html"><img src="img/Product_7.jpg" alt="featured_items"></a>
+         <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+          <div class= "add_tocard">
+              <a href="#">Add to card</a>
+          </div>
+        </div>
+        <div class= "featured_items_box">
+         <a class= "items_list" href="Singl.html"><img src="img/Product_8.jpg" alt="featured_items"></a>
+         <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+          <div class= "add_tocard">
+              <a href="#">Add to card</a>
+          </div>
+        </div>
+        <div class= "featured_items_box">
+         <a class= "items_list" href="Singl.html"><img src="img/Products_9.jpg" alt="featured_items"></a>
+         <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+          <div class= "add_tocard">
+              <a href="#">Add to card</a>
+          </div>
+        </div>
+       </section>
+       </div>
+        </div> 
+         <div class="container">
+           <div class = "pagination_products">
+              <nav>
+               <ul class="pagination">
+                 <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                 <li class="page-item"><a class="page-link" href="#">1</a></li>
+                 <li class="page-item"><a class="page-link" href="#">2</a></li>
+                 <li class="page-item"><a class="page-link" href="#">3</a></li>
+                 <li class="page-item"><a class="page-link" href="#">4</a></li>
+                 <li class="page-item"><a class="page-link" href="#">5</a></li>
+                 <li class="page-item"><a class="page-link" href="#">6</a></li>
+                 <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+               </ul>
+             </nav> 
+           <div class="all_product">
+           <a href="#" class= "button_all_products">All Products</a> 
+           </div>
+        </div>
+       </div>
+         <div class= "special_offer_products">
+          <div class= "container">
+            <div class= "product_offer_img">
+              <ul class= "special_offer_img_list">
+                 <li class= "offer_img_car_prod"><img src="https://student-geekbrains.000webhostapp.com/img/special_offer_car.png" alt="car"></li>
+                 <li class= "offer_img_discount_prod"><img src="https://student-geekbrains.000webhostapp.com/img/special_offer_discount.png" alt="discount"></li>
+                 <li class= "offer_img"><img src="https://student-geekbrains.000webhostapp.com/img/special_offer_crown.png" alt="crown"></li>
+              </ul>
+             </div> 
+      <section class= "special_offer_products_details">
+         <ul class= "products_details_list">
+             <li class="special_offer_li"><h3 class= "special_offer_cap">Free Delivery</h3><p class ="product_special_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p></li>
+             <li class="special_offer_li"><h3 class= "special_offer_cap">Sales &amp; discounts</h3><p class ="product_special_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p></li>
+             <li class="special_offer_li"><h3 class= "special_offer_cap">Quality assurance</h3><p class ="product_special_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p></li>
+         </ul>
+       </section>
+     </div>
+    </div>
+         <div class= "subscibe_bckg">
+        <div class= "container subscibe">
+         <div class= "subcr_details">
+           <div class= "suscribe_left">
+          <div class= "subscr_text_left"><img src="img/Subsc_right_img.png" alt="subscr_img" id="subcr_left_img">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+          <div class= "red_sbcr">Bin Burhan</div>
+          <div class= "subscr_text_left_down">Dhaka, Bd</div>
+       </div>
+            <div class= "subscribe_right">
+         <div class="subscr_right_text_apper">Subscribe</div>
+         <div class= "suscr_right_text_low">
+ FOR OUR NEWLETTER AND PROMOTION
+      </div>
+      <form class = "subscr_form" action="#">
+               <input type="email" placeholder=" Enter Your Email" id= "subscr">
                <button type ="submit" id= "subscr_button">Subscribe</button>
-                 </form>
-            </div>
-            </div>
+            </form>
+       </div>
+         </div>
        
-        </div>      
-       </div>         
+   </div>      
+      </div>
+         </div>
         <footer>
              <div class= "container footer_up">
                  <div class= "Footer_logo_text">
-                    <a class = "logo" href="index.html"><img class= "logo-img" src="https://student-geekbrains.000webhostapp.com/img/Logo.png" alt="logo">BRAN<span class= "logo_d">D</span></a> 
+                    <a class = "logo" href="index.html"><img class= "logo-img" src="img/Logo.png" alt="logo">BRAN<span class= "logo_d">D</span></a> 
                     <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit <br>
                     Efficiently plagiarize 24/365 action items and focused infomediaries.
                     Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
@@ -505,7 +676,7 @@
                    <div class = "company"> 
                      <ul class= "footer_nav_list">
                          <li><p>company</p></li>
-                         <li><a href="#">Home</a></li>
+                         <li><a href="index.html">Home</a></li>
                          <li><a href="#">Shop</a></li>
                          <li><a href="#">About</a></li>
                          <li><a href="#">How It Works</a></li>
@@ -540,15 +711,16 @@
                
                <div class= "social_links">
                    <div class="facebook"><a href="#">f</a></div>
-                   <div class="twit"><a href="#"><img src="https://student-geekbrains.000webhostapp.com/img/Twiter.png" alt="twit"></a></div>
+                   <div class="twit"><a href="#"><img src="img/Twiter.png" alt="twit"></a></div>
                    <div class="in"><a href="#">in</a></div>
-                   <div class="pin"><a href="#"><img src="https://student-geekbrains.000webhostapp.com/img/pinterest.svg" alt="pint"></a></div>
+                   <div class="pin"><a href="#"><img class = "pin_a_img"src="img/pinterest.svg" alt="pint"></a></div>
                    <div class="g"><a href="#">G+</a></div>
                    </div>
                </div>
              </div>
              
          </footer>
-         <script src = "Cart.js"></script> 
-         <script src = "utils.js"></script>      
+       </div>
+        
     </body>
+</html>    

@@ -375,6 +375,7 @@
       "brand": "Chloi"
     }
   ],
+  
   "cart": [
     {
       "id": "7",
@@ -387,7 +388,7 @@
       "category": "men",
       "material": "cotton blend",
       "brand": "Quiksilve",
-      "quantity": "2"
+      "quantity": "1"
     },
     {
       "id": "2",
@@ -401,21 +402,9 @@
       "material": "cotton",
       "brand": "Chloi",
       "quantity": "1"
-    },
-    {
-      "id": "1",
-      "Name": "Hoodie",
-      "img": "https://student-geekbrains.000webhostapp.com/img/Product_1.jpg",
-      "thumb": "https://student-geekbrains.000webhostapp.com/img/Product_1_small.jpg",
-      "singl": "https://student-geekbrains.000webhostapp.com/img/Product_single_item_1.jpg",
-      "Price": "35.7",
-      "color": "black",
-      "category": "men",
-      "material": "cotton",
-      "brand": "Mango",
-      "quantity": "1"
     }
   ],
+
   "reviews": [
     {
       "text": "fgsfgxsgsxghxsksx",
