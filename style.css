@@ -120,7 +120,7 @@ body {
 }
 .the_back_bckgr {
   height: 613px;
-  background-image: url("img/Header_bckgr.jpg");
+  background-image: url("https://student-geekbrains.000webhostapp.com/img/Header_bckgr.jpg");
   background-position: 0 -51px;
   display: flex;
   align-items: flex-start;
@@ -205,7 +205,7 @@ body {
   margin-top: 16px;
 }
 .for_men {
-  background-image: url("img/Site_news_4.jpg");
+  background-image: url("https://student-geekbrains.000webhostapp.com/img/Site_news_4.jpg");
   display: flex;
   width: 560px;
   height: 542px;
@@ -238,13 +238,13 @@ body {
   letter-spacing: 0.75px;
 }
 .for_women {
-  background-image: url("img/Site_news_2.jpg");
+  background-image: url("https://student-geekbrains.000webhostapp.com/img/Site_news_2.jpg");
   display: flex;
   width: 560px;
   height: 261px;
 }
 .for_kids {
-  background-image: url("img/Site_news_1.jpg");
+  background-image: url("https://student-geekbrains.000webhostapp.com/img/Site_news_1.jpg");
   display: flex;
   width: 560px;
   height: 542px;
@@ -252,7 +252,7 @@ body {
 .for_accesories {
   width: 560px;
   height: 261px;
-  background: #dadad2 url("img/Site_news_3.jpg") no-repeat 149px 0;
+  background: #dadad2 url("https://student-geekbrains.000webhostapp.com/img/Site_news_3.jpg") no-repeat 149px 0;
 }
 .site_news {
   width: 1140px;
@@ -288,7 +288,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: column;
+  
 }
 .items_list {
   text-decoration: none;
@@ -332,7 +332,7 @@ body {
   letter-spacing: 0.38px;
 }
 .button_brws:hover {
-  background: url("img/arrow_hor.png") no-repeat #f16d7f 180px 16px;
+  background: url("https://student-geekbrains.000webhostapp.com/img/arrow_hor.png") no-repeat #f16d7f 180px 16px;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
   transition: all 0.5s ease-in-out;
 }
@@ -348,7 +348,7 @@ body {
 .special_offer_text {
   width: 767px;
   height: 529px;
-  background: url("img/Special_offer.jpg");
+  background: url("https://student-geekbrains.000webhostapp.com/img/Special_offer.jpg");
 }
 .special_offer_text a {
   text-decoration: none;
@@ -368,7 +368,7 @@ body {
   letter-spacing: 1.5px;
 }
 .special_offer_bckr {
-  background: url("img/Special_offer.jpg");
+  background: url("https://student-geekbrains.000webhostapp.com/img/Special_offer.jpg");
   width: 767px;
   height: 529px;
 }
@@ -1374,8 +1374,8 @@ table {
   margin-top: 24px;
 }
 .tempor {
-  height: 930px;
-  margin-bottom: 180px;
+  height: 630px;
+  margin-bottom: 100px;
 }
 .choose_options {
   display: flex;
@@ -1396,7 +1396,7 @@ table {
   height: 55px;
   border: 1px solid #ef5b70;
   background-color: #ffffff;
-  margin-top: 28px;
+  margin-top: 70px;
   margin-left: 300px;
 }
 .singl_ad_cart a {
@@ -1690,9 +1690,30 @@ table {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
   transition: all 0.5s ease-in-out;
 }
+.checkOut_buttonInCart a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #f16d7f;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 86px;
+  margin-right: 40px;
+}
+.checkOut_buttonInCart a:hover{
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  transition: all 0.5s ease-in-out;
+}
+
 .cart_checkout {
   width: 360px;
-  height: 214px;
+  height: 254px;
   background-color: #f5f3f3;
 }
 .shiping_address_details {
@@ -1861,7 +1882,7 @@ table {
   margin-bottom: 10px;
 }
 .adress_label p {
-  color: #ebd9dc;
+  color: #f16d7f;
   font-size: 17px;
   margin-left: 5px;
 }
@@ -1924,6 +1945,16 @@ table {
   margin-bottom: 47px;
 }
 #phone{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#birthday{
   color: #222222;
   font-size: 16px;
   font-weight: 300;
@@ -2000,6 +2031,7 @@ p {
   font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 28px;
 }
 .subTotal h3 {
   margin-right: 20px;

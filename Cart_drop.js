@@ -3,19 +3,17 @@ var $catalog = $("#goods");
 var $relativ = $("#carousel_ul_singl");
 var $navigation = $("#navigation");
 
-function buildCatalog($href) {
-  //var shopParams = getShopParams();
-  var url = $href;
-  //var url = "http://localhost:3000/goods"   
-  //?category=men&_limit=9";
+function buildCatalog() {
+  var shopParams = getShopParams();
 
-  //if(shopParams.category) {
-  // url += "?category=" + shopParams.category;
-   //}
+  var url = "http://localhost:3000/goods";
 
- $.ajax({
-    url: url,
-    dataType: "json",
+  if(shopParams.category) {
+   url += "?category=" + shopParams.category + "&_limit=9";
+   }
+        $.ajax({
+          url: url,
+          dataType: "json",
           success: function(goods) {
             var $goods = $("#goods");
             for(var i = 0; i < goods.length; i++) {
@@ -102,13 +100,12 @@ function buildCart() {
 
 
 (function($) {
-  buildCatalog($href);
+  buildCatalog();
   buildCart();
   
   $navigation.on("click", ".menu_link", function(event){
-    var $href = this.href; //убрать после разбора работы ссылок и utils.js
-    buildCatalog($href)
-    event.preventDefault();
+    buildCatalog();
+    //event.preventDefault();
 
   });
 

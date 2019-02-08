@@ -10,3 +10,4 @@ function getShopParams() {
     return objectParams;
   }
 
+ // window.location.search.replace("?", "").split("&");

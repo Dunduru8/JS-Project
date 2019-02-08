@@ -375,7 +375,6 @@
       "brand": "Chloi"
     }
   ],
-  
   "cart": [
     {
       "id": "7",
@@ -402,9 +401,21 @@
       "material": "cotton",
       "brand": "Chloi",
       "quantity": "1"
+    },
+    {
+      "id": "4",
+      "Name": "T-shirt",
+      "img": "https://student-geekbrains.000webhostapp.com/img/Product_4.jpg",
+      "thumb": "https://student-geekbrains.000webhostapp.com/img/Product_4_small.jpg",
+      "singl": "https://student-geekbrains.000webhostapp.com/img/Product_single_item_4.jpg",
+      "Price": "25.5",
+      "color": "gray",
+      "category": "men",
+      "material": "cotton",
+      "brand": "Bakery",
+      "quantity": "1"
     }
   ],
-
   "reviews": [
     {
       "text": "fgsfgxsgsxghxsksx",

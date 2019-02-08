@@ -70,6 +70,8 @@ function buildCart() {
 
   })(jQuery);
 
+  $("#birthday").datepicker();
+
   var $checkout = document.getElementById("send_button");
   $checkout.addEventListener("click", handleClickButtonChekout);
   $("#dialog").dialog({ autoOpen: false });
