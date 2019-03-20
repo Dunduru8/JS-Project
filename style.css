@@ -120,7 +120,7 @@ body {
 }
 .the_back_bckgr {
   height: 613px;
-  background-image: url("img/Header_bckgr.jpg");
+  background-image: url("https://student-geekbrains.000webhostapp.com/img/Header_bckgr.jpg");
   background-position: 0 -51px;
   display: flex;
   align-items: flex-start;
@@ -205,7 +205,7 @@ body {
   margin-top: 16px;
 }
 .for_men {
-  background-image: url("img/Site_news_4.jpg");
+  background-image: url("https://student-geekbrains.000webhostapp.com/img/Site_news_4.jpg");
   display: flex;
   width: 560px;
   height: 542px;
@@ -238,13 +238,13 @@ body {
   letter-spacing: 0.75px;
 }
 .for_women {
-  background-image: url("img/Site_news_2.jpg");
+  background-image: url("https://student-geekbrains.000webhostapp.com/img/Site_news_2.jpg");
   display: flex;
   width: 560px;
   height: 261px;
 }
 .for_kids {
-  background-image: url("img/Site_news_1.jpg");
+  background-image: url("https://student-geekbrains.000webhostapp.com/img/Site_news_1.jpg");
   display: flex;
   width: 560px;
   height: 542px;
@@ -252,7 +252,7 @@ body {
 .for_accesories {
   width: 560px;
   height: 261px;
-  background: #dadad2 url("img/Site_news_3.jpg") no-repeat 149px 0;
+  background: #dadad2 url("https://student-geekbrains.000webhostapp.com/img/Site_news_3.jpg") no-repeat 149px 0;
 }
 .site_news {
   width: 1140px;
@@ -288,7 +288,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: column;
+  
 }
 .items_list {
   text-decoration: none;
@@ -332,7 +332,7 @@ body {
   letter-spacing: 0.38px;
 }
 .button_brws:hover {
-  background: url("img/arrow_hor.png") no-repeat #f16d7f 180px 16px;
+  background: url("https://student-geekbrains.000webhostapp.com/img/arrow_hor.png") no-repeat #f16d7f 180px 16px;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
   transition: all 0.5s ease-in-out;
 }
@@ -348,7 +348,7 @@ body {
 .special_offer_text {
   width: 767px;
   height: 529px;
-  background: url("img/Special_offer.jpg");
+  background: url("https://student-geekbrains.000webhostapp.com/img/Special_offer.jpg");
 }
 .special_offer_text a {
   text-decoration: none;
@@ -368,7 +368,7 @@ body {
   letter-spacing: 1.5px;
 }
 .special_offer_bckr {
-  background: url("img/Special_offer.jpg");
+  background: url("https://student-geekbrains.000webhostapp.com/img/Special_offer.jpg");
   width: 767px;
   height: 529px;
 }
@@ -424,7 +424,7 @@ body {
   height: 438px;
 }
 .subscibe {
-  background: url("img/Subscribe.jpg") no-repeat;
+  background: url("https://student-geekbrains.000webhostapp.com/img/Subscribe.jpg") no-repeat;
   width: 1610px;
   height: 438px;
 }
@@ -794,6 +794,11 @@ body {
 .featured_items_box {
   width: 261px;
   position: relative;
+  list-style-type: none;
+}
+.carousel_ul_singl{
+  display: flex;
+  justify-content: space-between;
 }
 .featured_items_box_img:hover .add_tocard {
   display: flex;
@@ -879,6 +884,12 @@ details {
   width: 263px;
   height: 74px;
   margin-bottom: 58px;
+}
+table {
+	font-size: 1em;
+}
+.ui-draggable, .ui-droppable {
+	background-position: top;
 }
 .trending_now_list li {
   list-style-type: none;
@@ -1280,8 +1291,7 @@ details {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-  line-height: 50px;
+  line-height: 80px;
   padding-left: 72px;
 }
 .singl_item_img {
@@ -1364,8 +1374,8 @@ details {
   margin-top: 24px;
 }
 .tempor {
-  height: 930px;
-  margin-bottom: 180px;
+  height: 630px;
+  margin-bottom: 100px;
 }
 .choose_options {
   display: flex;
@@ -1386,7 +1396,7 @@ details {
   height: 55px;
   border: 1px solid #ef5b70;
   background-color: #ffffff;
-  margin-top: 28px;
+  margin-top: 70px;
   margin-left: 300px;
 }
 .singl_ad_cart a {
@@ -1680,9 +1690,30 @@ details {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
   transition: all 0.5s ease-in-out;
 }
+.checkOut_buttonInCart a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #f16d7f;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 86px;
+  margin-right: 40px;
+}
+.checkOut_buttonInCart a:hover{
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  transition: all 0.5s ease-in-out;
+}
+
 .cart_checkout {
   width: 360px;
-  height: 214px;
+  height: 254px;
   background-color: #f5f3f3;
 }
 .shiping_address_details {
@@ -1714,12 +1745,55 @@ details {
   flex-direction: row;
   justify-content: space-between;
 }
+.checkout_buttonJQ{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 70px;
+  height: 30px;
+}
+.checkout_buttonHide{
+  margin-bottom: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+#send_button{
+  display: block;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 50px;
+}
+#send_button a{
+  display: block;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 50px;
+}
+#send_button a:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  transition: all 0.5s ease-in-out;
+}
+
 .shiping_adress_cap {
   color: #222222;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   display: flex;
+  margin-top: 20px;
 }
 .shiping_adress_cap p {
   color: #222222;
@@ -1738,8 +1812,11 @@ details {
 .checkout_form_1 {
   display: flex;
   justify-content: space-between;
-  margin-top: 90px;
-  margin-bottom: 79px;
+  margin-top: 30px;
+  margin-bottom: 59px;
+}
+.checkout_forms{
+  margin-bottom: 100px;
 }
 .checkout_form_1_right {
   width: 500px;
@@ -1802,6 +1879,7 @@ details {
   line-height: 20px;
   text-transform: uppercase;
   display: flex;
+  margin-bottom: 10px;
 }
 .adress_label p {
   color: #f16d7f;
@@ -1846,8 +1924,89 @@ details {
 .button_Fpassword a:hover {
   border-bottom: 1px solid #f16d7f;
 }
+#name{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#sername{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#phone{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#birthday{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#email_adress_1 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+}
+#city{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 18px;
+  width: 372px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 47px;
+  position: absolute;
+}
+.city_none{
+  display: none;
+}
+#city_list{
+  position: relative;
+  padding-left: 10px;
+  margin-top: 55px;
+  height: 150px;
+  overflow: scroll;
+  border: 1px solid #f7cbcb;
+}
+.display_none{
+  display: none;
+}
+#city_list li{
+  list-style-type: none;
+}
 .checkout_drop {
   display: none;
+}
+.checkout_form_1_left{
+  margin-top: 67px;
 }
 .checkout_form_3 {
   margin-top: 33px;
@@ -1872,6 +2031,7 @@ p {
   font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 28px;
 }
 .subTotal h3 {
   margin-right: 20px;

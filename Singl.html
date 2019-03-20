@@ -3,22 +3,30 @@
 <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Document</title>
+        <title>Singl item</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        //стили для карусели
+        <link rel="stylesheet" type="text/css" href="jcarousel.responsive.css">
+        //скрипты для карусели
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="jcarousel.responsive.js"></script>
+
         <script src = "utils.js"></script>
 </head> 
 <body>
-     <div class="content">
-      <div class="top">
-        <header class="header">
-            <div class="container header-flex"> 
+   <div class="content">
+     <div class="top">
+       <header class="header">
+         <div class="container header-flex"> 
             <div class= "header-left">
-               <a class = "logo" href="index.html"><img class= "logoe-img" src="https://student-geekbrains.000webhostapp.com/img/Logo.png" alt="logo">BRAN<span class= "logo_d">D</span></a>
-             <form class = "header_form" action="">
+              <a class = "logo" href="index.html"><img class= "logoe-img" src="https://student-geekbrains.000webhostapp.com/img/Logo.png" alt="logo">BRAN<span class= "logo_d">D</span></a>
+              <form class = "header_form" action="">
                 <div class= "browse">Browse<img class="arrow_brws" src="https://student-geekbrains.000webhostapp.com/img/hover_brws.png" alt="arrow">
-                <div class= "drop_dow">
+                  <div class= "drop_dow">
                     <div class= "drop_flex">
                        <h3 class= "drop_heading">Women</h3>
                        <ul class="drop_menu">
@@ -45,14 +53,14 @@
                          <li><a class= "drop_link" href="#">Jackets/vests</a></li>
                        </ul> 
                     </div>
-                </div>
+                  </div>
                 </div>
                 <input type="text" placeholder="Search for Item..." id= "search">
                 <button type ="submit" id= "submit"><img src="https://student-geekbrains.000webhostapp.com/img/search.png" alt="search"></button>
-             </form>
+              </form>
            </div>
            <div class= "header-right">
-                 <div class= "drop_cart" id = "cart">
+                <div class= "drop_cart" id = "cart">
                   <a href="cart.html"><img class="anim-cart" src="https://student-geekbrains.000webhostapp.com/img/cart.svg" alt="cart" id="cart"></a>
                    
                    <div class="drop_down_cart">
@@ -93,12 +101,12 @@
                            <a href="cart.html">Go to cart</a>
                        </div>
                    </div>
-               </div> 
+                </div> 
              <a href="#" class= "button">My Account<img class="whtite" src="https://student-geekbrains.000webhostapp.com/img/hover_white.png" alt="arrow"></a> 
            </div>
-            </div>
-        </header>
-      <nav class="navigation">
+         </div>
+      </header>
+        <nav class="navigation">
             <div class= "container">
                <div class= "border-bottom_red">
               <ul class= "menu_header_top">
@@ -418,10 +426,10 @@
                </div>
                </li>                 
             </ul>
-             </div>
+               </div>
             </div>
             
-      </nav>  
+        </nav>  
       <nav class= "produckt_nav">
            <div class= "container breadCrumbs_nav">
              <h3 class="product_nav_text">New Arrivals</h3>
@@ -496,54 +504,72 @@
                      <a href="#"><img src="https://student-geekbrains.000webhostapp.com/img/cart_red.svg" alt="cart_red"> 
                      Add to Cart</a> 
                   </div>
-                  <div class = "container review" >
-                    <p class = "review_p">Leave feedback</p>
-                    <textarea id = "review" cols="55" rows="23"></textarea> 
-                    <div id = "review_li"></div>
-                    <button id = "review_send">Send</button>
-                   
-                  </div>
+                  
              </div>
-        </div>
+         </div>
         <a href="#"><img src="https://student-geekbrains.000webhostapp.com/img/Arrow_next.png" alt="arrow"></a>
        </div> 
       </div>
       <div class="tempor"></div>
       <div class="relative_text"><p>you may like also</p></div>
-      <div class="relativ_products">
-      <section class= "container relative_items">
-       <div class= "featured_items_box">
-      <section class= "container relative_items">
-         <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_1.jpg" alt="featured_items"></a>
-         <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
-          <div class= "add_tocard">
-              <a href="#">Add to card</a>
-        </div>
-      </div>
-       <div class= "featured_items_box">
-         <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_5.jpg" alt="featured_items"></a>
-          <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
-          <div class= "add_tocard">
-              <a href="#">Add to card</a>
-        </div>
-      </div>
-       <div class= "featured_items_box">
-          <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_2.jpg" alt="featured_items"></a>
-          <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
-          <div class= "add_tocard">
-              <a href="#">Add to card</a>
-        </div>
-      </div>
-       <div class= "featured_items_box">
-          <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_6.jpg" alt="featured_items"></a>
-          <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
-          <div class= "add_tocard">
-              <a href="#">Add to card</a>
-          </div>
-       </div>
+
+      <div class="relativ_products jcarousel-wrapper">
+        <div class= "container relative_items jcarousel" id = "relative_items">
+                    <ul class= "carousel_ul_singl" id = "carousel_ul_singl">
+                        <li class= "featured_items_box">
+                           <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_1.jpg" alt="featured_items"></a>
+                           <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+                           <div class= "add_tocard">
+                           <a href="#">Add to card</a>
+                           </div>
+                        </li>
         
-      </section>  
+                        <li class= "featured_items_box">
+                           <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_5.jpg" alt="featured_items"></a>
+                           <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+                           <div class= "add_tocard">
+                           <a href="#">Add to card</a>
+                           </div>
+                        </li>
+        
+                        <li class= "featured_items_box">
+                            <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_2.jpg" alt="featured_items"></a>
+                            <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+                            <div class= "add_tocard">
+                            <a href="#">Add to card</a>
+                            </div>
+                        </li>
+        
+                        <li class= "featured_items_box">
+                           <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_6.jpg" alt="featured_items"></a>
+                           <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+                            <div class= "add_tocard">
+                             <a href="#">Add to card</a>
+                           </div>
+                        </li>
+                        <li class= "featured_items_box">
+                                <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_5.jpg" alt="featured_items"></a>
+                                <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+                                <div class= "add_tocard">
+                                <a href="#">Add to card</a>
+                                </div>
+                        </li>
+             
+                        <li class= "featured_items_box">
+                                 <a class= "items_list" href="Singl.html"><img src="https://student-geekbrains.000webhostapp.com/img/featured_2.jpg" alt="featured_items"></a>
+                                 <p class="items_list_text">MANGO PEOPLE T-SHIRT</p><p class="items_list_price">$52.00</p>
+                                 <div class= "add_tocard">
+                                 <a href="#">Add to card</a>
+                                 </div>
+                        </li>
+                     </ul>
+         </div> 
+         <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+         <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+            <p class="jcarousel-pagination"></p> 
       </div>
+
       <div class= "subscibe_bckg">
         <div class= "container subscibe">
           <div class= "subcr_details">
@@ -623,7 +649,7 @@ a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
         </div>
         
     </footer>
-      <script src = "Review.js"></script>
-      <script src = "Cart_drop.js"></script>  
+      <script src = "Cart_drop.js"></script> 
     </div>         
 </body>
+</html>
